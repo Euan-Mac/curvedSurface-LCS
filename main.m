@@ -9,7 +9,7 @@ load(fullfile(cd,'Data','growingSphere.mat'));  Nt = size(timeArr,2);
 %% Parameters- NEEDS USER INPUT  
 
 isStatic = 0; % 1- isStatic Mesh on the data, 0 - Meshdeforms/changes in every time
-cpu_num = 10; % The number of parallel cpu cores to be alloted for advection 
+cpu_num = 4; % The number of parallel cpu cores to be alloted for advection 
 % NOTE : The velocity data is copied across all cores therefore if velocity
 % data is  y GB; The total RAM required for 'n' cores is n*y GB  
 
